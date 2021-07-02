@@ -24,7 +24,7 @@ weights = {
 biases = {
 	'out': tf.Variable(tf.random_normal([nClasses]))
 }
-
+##
 def RNN(x, weights, biases):
 	x = tf.transpose(x, [1,0,2])
 	x = tf.reshape(x, [-1, nInput])
